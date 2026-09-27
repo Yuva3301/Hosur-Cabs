@@ -1,0 +1,423 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #fff;
+  color: #111;
+  line-height: 1.6;
+}
+
+
+/* ================= HEADER ================= */
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 15px 6%;
+
+  background: #101418;
+
+  box-shadow: 0 3px 15px rgba(0,0,0,.25);
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: 900;
+  color: #ffc400;
+}
+
+.logo span {
+  color: white;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 25px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #ffc400;
+}
+
+.header-call {
+  background: #ffc400;
+  color: #111;
+
+  padding: 11px 18px;
+
+  border-radius: 30px;
+
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+  min-height: 650px;
+
+  display: flex;
+  align-items: center;
+
+  padding: 70px 7%;
+
+  background:
+    linear-gradient(
+      rgba(0,0,0,.62),
+      rgba(0,0,0,.62)
+    ),
+    url("https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=1800&q=85")
+    center / cover no-repeat;
+}
+
+.hero-content {
+  max-width: 700px;
+  color: white;
+}
+
+.welcome {
+  color: #ffc400;
+  letter-spacing: 5px;
+  font-weight: bold;
+}
+
+.hero h1 {
+  font-size: clamp(45px, 7vw, 75px);
+  line-height: 1;
+  margin: 15px 0;
+}
+
+.hero h1 span {
+  color: #ffc400;
+}
+
+.hero h2 {
+  font-size: 27px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 19px;
+  max-width: 600px;
+  margin-bottom: 30px;
+}
+
+
+/* ================= BUTTONS ================= */
+
+.buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-block;
+
+  padding: 14px 26px;
+
+  border-radius: 35px;
+
+  text-decoration: none;
+  font-weight: bold;
+
+  transition: .3s;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+}
+
+.call-btn {
+  background: #ffc400;
+  color: #111;
+}
+
+.whatsapp-btn {
+  background: #19c95a;
+  color: white;
+}
+
+
+/* ================= SECTION ================= */
+
+section {
+  padding: 75px 7%;
+}
+
+.section-title {
+  text-align: center;
+
+  font-size: 40px;
+
+  margin-bottom: 45px;
+}
+
+.section-title span {
+  color: #ffc400;
+}
+
+
+/* ================= SERVICES ================= */
+
+.services {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 22px;
+}
+
+.service-card {
+  text-align: center;
+
+  padding: 35px 20px;
+
+  border: 1px solid #ddd;
+
+  border-radius: 12px;
+
+  background: white;
+
+  transition: .3s;
+}
+
+.service-card:hover {
+  transform: translateY(-7px);
+
+  box-shadow:
+    0 10px 30px rgba(0,0,0,.1);
+}
+
+.icon {
+  width: 65px;
+  height: 65px;
+
+  margin: 0 auto 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #ffc400;
+
+  font-size: 30px;
+}
+
+
+/* ================= CARS ================= */
+
+.cars-section {
+  background: #101418;
+  color: white;
+}
+
+.cars {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 25px;
+}
+
+.car-card {
+  background: #171b20;
+
+  border: 1px solid #444;
+
+  border-radius: 12px;
+
+  overflow: hidden;
+}
+
+.car-card img {
+  width: 100%;
+  height: 230px;
+
+  object-fit: cover;
+
+  display: block;
+}
+
+.car-content {
+  padding: 22px;
+}
+
+.car-content h3 {
+  color: #ffc400;
+
+  font-size: 24px;
+
+  margin-bottom: 7px;
+}
+
+
+/* ================= WHY US ================= */
+
+.why {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 25px;
+
+  text-align: center;
+}
+
+.why-card {
+  padding: 25px;
+}
+
+
+/* ================= CONTACT ================= */
+
+.contact {
+  background: #ffc400;
+}
+
+.contact-box {
+  max-width: 1000px;
+
+  margin: auto;
+
+  padding: 45px;
+
+  background: #101418;
+
+  color: white;
+
+  border-radius: 15px;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  gap: 30px;
+}
+
+.contact-box h2 {
+  color: #ffc400;
+
+  font-size: 38px;
+
+  margin-bottom: 10px;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+  background: #101418;
+
+  color: white;
+
+  text-align: center;
+
+  padding: 30px 20px;
+}
+
+footer h2 span {
+  color: #ffc400;
+}
+
+footer .copyright {
+  margin-top: 20px;
+
+  color: #aaa;
+
+  font-size: 14px;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 950px) {
+
+  nav {
+    display: none;
+  }
+
+  .services,
+  .cars,
+  .why {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact-box {
+    flex-direction: column;
+
+    text-align: center;
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  header {
+    padding: 14px 5%;
+  }
+
+  .logo {
+    font-size: 22px;
+  }
+
+  .header-call {
+    padding: 9px 13px;
+
+    font-size: 13px;
+  }
+
+  .hero {
+    min-height: 600px;
+
+    padding: 50px 6%;
+  }
+
+  .hero h2 {
+    font-size: 21px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  section {
+    padding: 55px 6%;
+  }
+
+  .section-title {
+    font-size: 32px;
+  }
+
+  .services,
+  .cars,
+  .why {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-box {
+    padding: 30px 20px;
+  }
+
+}
